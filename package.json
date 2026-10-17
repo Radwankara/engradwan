@@ -1,0 +1,45 @@
+{
+  "name": "abu-ammar-supermarket",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx server/index.ts",
+    "db:setup": "tsx server/db/setup.ts",
+    "db:seed": "tsx server/seed.ts",
+    "build": "vite build && esbuild server/index.ts --bundle --platform=node --format=esm --packages=external --outfile=dist/server.js",
+    "start": "node dist/server.js"
+  },
+  "dependencies": {
+    "@clerk/express": "^2.1.79",
+    "@clerk/localizations": "^4.23.0",
+    "@clerk/react": "^6.17.8",
+    "@clerk/shared": "^4.40.0",
+    "@clerk/themes": "^2.4.57",
+    "@replit/object-storage": "^1.0.0",
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.6",
+    "@types/multer": "^2.3.0",
+    "@types/pg": "^8.23.1",
+    "cors": "^2.8.6",
+    "esbuild": "^0.28.2",
+    "express": "^5.3.0",
+    "file-type": "^21.3.4",
+    "http-proxy-middleware": "^3.0.7",
+    "lucide-react": "^0.468.0",
+    "multer": "^2.4.0",
+    "pg": "^8.23.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "tsx": "^4.23.15",
+    "wouter": "^3.13.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.7.0",
+    "autoprefixer": "^10.6.1",
+    "postcss": "^8.5.30",
+    "tailwindcss": "^3.4.19",
+    "typescript": "^5.9.3",
+    "vite": "^5.4.21"
+  }
+}

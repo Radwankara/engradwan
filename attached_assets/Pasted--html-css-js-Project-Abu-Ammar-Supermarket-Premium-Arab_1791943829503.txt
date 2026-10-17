@@ -1,0 +1,309 @@
+اعملي الموقع ده بس عربي html ,css,js Project: Abu Ammar Supermarket — Premium Arabic E-commerce Website
+Act as a senior UI/UX designer and frontend engineer. Build a complete, professional, modern, responsive e-commerce frontend for a large Egyptian supermarket named "سوبر ماركت أبو عمار" (Abu Ammar Supermarket).
+The website must look like a real, premium supermarket brand, not a basic template or a simple student project. The primary market is Egypt, and the primary language is Arabic.1. Technology Stack
+Use:
+React with Vite.
+TypeScript where practical.
+Tailwind CSS for styling.
+Lucide React for icons.
+React Router for navigation.
+Reusable, maintainable components.
+Local mock product data for the initial frontend.
+LocalStorage to persist the shopping cart and customer selections.
+Clean architecture that allows connecting a backend and database later.
+Do not build only a static landing page. Build the full frontend experience with working navigation, product pages, search, filters, cart, and checkout.2. Branding and Visual Identity
+Brand name: سوبر ماركت أبو عمار.
+Design direction:
+Premium, trustworthy, modern Egyptian supermarket.
+Primary colors: deep supermarket green, fresh green accents, white, and subtle warm neutral backgrounds.
+Use a modern Arabic font such as Cairo or Tajawal.
+Full RTL layout across every page.
+Excellent spacing, typography, product photography, and consistent visual hierarchy.
+Subtle animations and hover effects.
+Rounded product cards, soft shadows, clean icons, and polished buttons.
+Use realistic, high-quality product images. Never stretch images or use unrelated placeholder images.
+Create a simple text-based logo or an elegant supermarket logo treatment.
+Avoid excessive gradients, clutter, and oversized empty sections.
+Design mobile-first, then optimize for tablet and desktop.
+The result should feel like a professional grocery delivery platform.3. Header and Navigation
+Build a responsive header containing:
+Abu Ammar Supermarket logo.
+A prominent product search bar with Arabic placeholder: "بتدور على إيه؟".
+Account or customer information icon.
+Shopping cart icon with a live item count.
+WhatsApp contact shortcut.
+Delivery location selector.
+A clear navigation menu.
+Main navigation items:
+الرئيسية
+كل المنتجات
+العروض
+الخضروات
+الفاكهة
+الألبان والجبن
+اللحوم والدواجن
+الأسماك
+البقالة
+المشروبات
+المخبوزات
+المجمدات
+المنظفات
+العناية الشخصية
+On mobile, use a compact header and a convenient category menu. Ensure all Arabic text is RTL aligned correctly.4. Homepage
+Build an attractive homepage with these sections:
+A. Hero banner:
+Large, professional supermarket promotional banner.
+Main headline: "كل احتياجات بيتك في مكان واحد"
+Supporting text: "تسوق منتجاتك المفضلة وعروض أبو عمار بسهولة."
+Primary CTA: "تسوق الآن"
+Secondary CTA: "اكتشف العروض"
+Use grocery-themed imagery and a clean green-and-white design.
+B. Featured offers:
+Display discounted products with original price, discounted price, and discount percentage.
+Add an "العروض المميزة" heading.
+Each offer card must have an "أضف للسلة" button.
+C. Shop by category: Create visual category cards with images or icons for:
+الخضروات
+الفاكهة
+الألبان والجبن
+اللحوم والدواجن
+الأسماك
+البقالة
+الأرز والمكرونة
+الزيوت والسمن
+المعلبات
+المشروبات
+المخبوزات
+المجمدات
+الحلويات والسناكس
+المنظفات
+العناية الشخصية
+مستلزمات المنزل
+D. Best sellers: Show a grid of popular grocery products.
+E. Fresh products section: Feature fresh vegetables and fruits with attractive images and clear pricing by kilogram or unit.
+F. Special promotions banner: Promote weekly deals and limited-time offers. Do not invent real promotions; use clearly labeled demo offers until actual prices are provided.
+G. Why shop with Abu Ammar:
+Easy ordering.
+Clear pricing.
+Convenient delivery or store pickup, depending on availability.
+Fresh product selection.
+Customer support.
+H. Footer:
+Contact information placeholders.
+Store address placeholder.
+Working hours placeholder.
+WhatsApp contact placeholder.
+Social media links.
+Delivery and return policies.
+Privacy policy and terms.
+Do not invent a real address, phone number, or social media account.5.
+Product Categories and Listing Pages
+Each category must have its own dedicated page or filterable category view.
+Examples:
+/category/vegetables
+/category/fruits
+/category/dairy
+/category/meat-poultry
+/category/fish
+/category/grocery
+/category/rice-pasta
+/category/oils
+/category/canned-food
+/category/beverages
+/category/bakery
+/category/frozen
+/category/snacks
+/category/cleaning
+/category/personal-care
+/category/household
+Every listing page should include:
+Category title and short description.
+Breadcrumb navigation.
+Responsive product grid.
+Search within the category.
+Sorting by price, popularity, and newest.
+Filters for price range, brand, and availability when applicable.
+Product count.
+Clear empty-state message when no products match.
+Loading and error states where appropriate.
+Products must belong to the correct categories. Do not mix vegetables with detergents or other unrelated items.6. Product Card Design
+Every product card must display:
+Product image.
+Arabic product name.
+Brand, when relevant.
+Unit or package size, such as 1 kg, 500 g, 1 liter, or one piece.
+Current selling price in Egyptian pounds (EGP).
+Original price when a genuine discount exists.
+Discount percentage when applicable.
+Stock availability.
+Favorite button.
+Quantity selector or add-to-cart button.
+A clear indication of variable-weight products.
+For variable-weight products such as loose vegetables and fruit, show pricing per kilogram and clarify that the final weight and price may vary.
+Do not invent actual product prices or present demo prices as verified store prices. Mark seed products as sample data and make them easy to replace with the supermarket's real catalog.7. Product Details Page
+When a customer clicks a product, open a dedicated product details page or a well-designed product modal.
+Display:
+Large product image and thumbnail gallery when images exist.
+Full Arabic product name.
+Detailed Arabic product description.
+Brand and product category.
+Package size or unit.
+Current price.
+Original price and discount, if applicable.
+Offer terms and expiration date when configured.
+Stock status.
+Quantity selector.
+Unit of measurement.
+Add to cart button.
+Buy now button.
+WhatsApp inquiry button.
+Delivery and pickup information, if configured.
+Related products from the same category.
+Use realistic Arabic descriptions. Never invent medical claims, certifications, ingredient information, or product specifications.8. Shopping Cart
+Implement a fully working shopping cart.
+Features:
+Add products.
+Increase or decrease quantities.
+Remove items.
+Clear cart.
+Show product thumbnails, unit prices, quantities, and line totals.
+Calculate subtotal automatically.
+Display discounts correctly.
+Display delivery fees only when configured.
+Display the final total.
+Persist cart data in LocalStorage.
+Show a useful empty-cart state.
+Add a "متابعة التسوق" button.
+Add a "إتمام الطلب" button.
+Prevent invalid quantities and handle unavailable products appropriately.9. Checkout and Order Form
+Create a polished Arabic RTL checkout page.
+Required customer fields:
+الاسم بالكامل.
+رقم الهاتف.
+رقم واتساب if different from the main phone.
+المحافظة.
+المنطقة أو المدينة.
+العنوان بالتفصيل.
+علامة مميزة للعنوان, optional.
+طريقة الاستلام: توصيل أو استلام من الفرع, only if supported by the store.
+طريقة الدفع: الدفع عند الاستلام, only if supported and enabled.
+ملاحظات إضافية, optional.
+Show a full order summary:
+Products and quantities.
+Unit prices.
+Subtotal.
+Discount.
+Delivery fees.
+Final total.
+Selected delivery and payment method.
+Validate all required fields, including Egyptian phone numbers. Show clear Arabic validation errors.
+When the customer clicks "تأكيد الطلب":
+Validate all form fields.
+Create a unique order reference.
+Save the order in the current frontend demo storage.
+Show a confirmation page with the order reference, products, quantities, and total.
+Provide a WhatsApp order notification option.
+Never claim that a real order has been sent or saved to a business server when no backend is connected.10. WhatsApp Order Notifications
+The business wants to receive new order notifications on its phone.
+Implement a configurable WhatsApp integration:
+Store the business WhatsApp number in a single configuration file.
+Use an international phone number format without the plus sign or spaces in the WhatsApp URL.
+When the customer confirms an order, generate a formatted Arabic order message.
+Include order number, customer name, phone, delivery address, selected fulfillment method, products, quantities, unit prices, subtotal, delivery fee, and final total.
+Add a button labeled "إرسال الطلب عبر واتساب".
+Open the WhatsApp chat with the prefilled order message using the official wa.me link format.
+Encode the message correctly for URL use.
+Never hardcode an invented business phone number.
+Important technical limitation: opening a WhatsApp link with a prefilled message does not automatically send the message. The customer must press Send in WhatsApp. Explain this clearly in the interface.
+For automatic business-side notifications without customer interaction, prepare an integration layer for a backend connected to the WhatsApp Business Platform or an approved provider. Do not expose API tokens in frontend code.11. Product Search
+Implement functional search:
+Search by Arabic product name.
+Search by brand.
+Search by category.
+Handle partial matches.
+Display matching products instantly.
+Include a clear search button and clear-search action.
+Display helpful Arabic suggestions when no products are found.
+Keep search accessible on mobile.12. Product Data Structure
+Create a centralized product data model with these fields:
+id
+slug
+nameAr
+brand
+categoryId
+shortDescription
+fullDescription
+image
+gallery
+unit
+packageSize
+price
+originalPrice
+discountPercentage
+offerDescription
+offerStartDate
+offerEndDate
+stockQuantity
+isAvailable
+isFeatured
+isBestSeller
+isVariableWeight
+createdAt
+Use valid demo data for representative products across all categories. Make it obvious in the code which data is sample data.
+Use a single source of truth for product prices and stock so that product pages, cart totals, and checkout summaries remain consistent.13. Admin-Ready Architecture
+Organize the frontend so it can later connect to a secure backend and admin dashboard.
+Prepare clear service functions for:
+Fetching categories.
+Fetching products.
+Fetching product details.
+Creating an order.
+Fetching order status.
+Managing inventory.
+Managing promotional offers.
+For now, implement local mock services and clearly document which operations require a backend.
+Do not pretend LocalStorage is a secure database or a shared order-management system.
+The future admin dashboard should support:
+Add, edit, and delete products.
+Update prices and inventory.
+Upload product images.
+Create and schedule offers.
+View orders and customer details.
+Update order status.
+Manage delivery fees and service areas.
+If a real backend is not configured, label the dashboard as demo mode and do not store sensitive customer information insecurely.14. Marketing and Analytics Readiness
+Prepare the site for Meta Ads campaigns:
+Dedicated URLs for products, categories, and promotions.
+Support URL query parameters and UTM campaign parameters.
+Add integration points for Meta Pixel.
+Prepare event functions for ViewContent, AddToCart, InitiateCheckout, and Purchase.
+Trigger Purchase only after a valid, successful order confirmation from the configured order system.
+Do not include fake Purchase events in demo mode.
+Keep tracking IDs in environment variables or a secure configuration process.
+Respect applicable consent and privacy requirements.
+Avoid exposing customer personal data in analytics events.
+The goal is to measure which ads and offers generate completed orders, not merely clicks.15. Accessibility and Quality
+Ensure:
+Correct Arabic RTL direction across every component.
+Good contrast and readable font sizes.
+Keyboard accessibility and visible focus indicators.
+Proper form labels.
+Responsive layouts at mobile, tablet, and desktop sizes.
+Optimized images and reasonable loading performance.
+Clear loading, success, empty, and error states.
+No broken links or nonfunctional buttons.
+No horizontal overflow on mobile.
+No fake claims about delivery, stock, payment, or completed orders.16. Final Deliverables
+Build the complete runnable project, not just a visual mockup.
+Provide:
+All React components and pages.
+Tailwind configuration.
+Centralized category and product data.
+Cart and checkout functionality.
+WhatsApp message generation.
+Routing.
+Responsive layouts.
+A README with setup instructions.
+An environment/configuration example.
+A clear list of features that work in demo mode and features that require a backend.
+Start by building the complete polished frontend with realistic demo data. Then test navigation, product details, cart calculations, checkout validation, and WhatsApp link generation.
+Prioritize a professional design, functional shopping experience, clean code, and an architecture that can later be connected to a real inventory and order management system.

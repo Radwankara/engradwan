@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 80">
+  <rect width="80" height="80" rx="20" fill="#175d3b"/>
+  <path d="M19 38h42l-4 28H23l-4-28Z" fill="#fffdf7"/>
+  <path d="m27 38 5-17h16l5 17M29 48h22M31 57h4m8 0h4" fill="none" stroke="#175d3b" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+  <text x="100" y="38" fill="#175d3b" font-family="Cairo, sans-serif" font-size="22" font-weight="700">سوبر ماركت</text>
+  <text x="100" y="64" fill="#0f172a" font-family="Cairo, sans-serif" font-size="20" font-weight="700">أبو عمار</text>
+</svg>
